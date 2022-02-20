@@ -9,7 +9,8 @@
   <title>Sign Up!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body class="container">
   <div class="container col" id="left">
@@ -20,42 +21,40 @@
     <div class="container centered" id="imgcred"><p>Photo by <a href="https://unsplash.com/@a_leskova">Anastasiya Leskova</a> on <a href="https://unsplash.com/">Unsplash</p></a>
     </div>
   </div>
-  <div class="container col size2" id="right">
+  <div class="container col" id="right">
     <div>
-      <p class="cta">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p class="cta">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
       <p class="cta">You <em>know</em> you want to.</p>
     </div>
     <div>
       <form action="post" id="sign-up">
-        <fieldset class="container">
+        <fieldset class="container col">
           <legend>Let's do this!</legend>
-          <fieldset id="form-left">
+          <fieldset id="form-top" class="container">
             <div class="container col">
               <label for="fname">First Name</label>
               <input type="text" name="fname" id="">
             </div>
-
-            <div class="container col">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="">
-            </div>
-
-            <div class="container col">
-              <label for="pwd">Password</label>
-              <input type="password" name="pwd" id="">
-            </div>
-          </fieldset>
-          <fieldset id="form-right">
             <div class="container col">
               <label for="lname">Last Name</label>
               <input type="text" name="lname" id="">
             </div>
-
+          </fieldset>
+          <fieldset id="form-mid" class="container">
+            <div class="container col">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="">
+            </div>
             <div class="container col">
               <label for="tel">Phone Number</label>
               <input type="tel" name="tel" id="">
             </div>
-
+          </fieldset>
+          <fieldset id="form-bot" class="container">
+            <div class="container col">
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="">
+            </div>
             <div class="container col">
               <label for="cpwd">Confirm Password</label>
               <input type="password" name="cpwd" id="">

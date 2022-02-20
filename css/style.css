@@ -15,6 +15,7 @@
   justify-content: space-between;
   width: 33vw;
   position: relative;
+  overflow: hidden;
 }
 
 body {

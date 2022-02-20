@@ -4,6 +4,7 @@
 
 #left {
   background-image: url('/img/left-hero.jpg');
+  background-position: center;
 }
 
 #left, #right {

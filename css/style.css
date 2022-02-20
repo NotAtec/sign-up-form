@@ -1,5 +1,8 @@
 :root {
   font-family: 'Roboto', sans-serif;
+  --shadow-color: #616161;
+  --accent-color: #596D48;
+  --form-text-color: #1f2937;
 }
 
 #left {
@@ -23,13 +26,22 @@ body {
 }
 
 button {
-  background-color: #596D48;
+  background-color: var(--accent-color);
   color: white;
   font-weight: bold;
+  border-color: var(--accent-color);
+  border-radius: 8px;
+  padding: 16px 48px;
+  box-shadow: 0 0 5px var(--shadow-color);
+  border: 2px solid var(--accent-color);
+}
+
+button:active {
+  box-shadow: 0 0 0px var(--shadow-color);
 }
 
 a {
-  color: #596D48;
+  color: var(--accent-color);
 }
 .login a {
   font-weight: bold;
@@ -79,7 +91,7 @@ fieldset {
 legend {
   font-size: larger;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--form-text-color);
 }
 @font-face {
   font-family: Norse-Bold;
@@ -100,12 +112,12 @@ input {
 label {
   font-weight: 500;
   font-size: 0.9rem;
-  color: #1f2937;
+  color: var(--form-text-color);
 }
 
 input:focus {
   outline: none;
   border: 2px solid #2f5fe2;
-  box-shadow: 0 0 5px #616161;
+  box-shadow: 0 0 5px var(--shadow-color);
 
 }

@@ -31,6 +31,14 @@ button {
 a {
   color: #596D48;
 }
+.login a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
 
 #imgcred, #imgcred a {
   color: white;
@@ -64,7 +72,20 @@ h1 {
   padding-bottom: 0;
 }
 
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-size: larger;
+  font-weight: 700;
+  color: #1f2937;
+}
 @font-face {
   font-family: Norse-Bold;
   src: url("/fonts/Norse-Bold.otf");
+}
+
+fieldset div {
+  padding-right: 4rem;
 }

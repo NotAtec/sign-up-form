@@ -33,31 +33,32 @@
           <fieldset id="form-top" class="container">
             <div class="container col">
               <label for="fname">First Name</label>
-              <input type="text" name="fname" id="">
+              <input type="text" name="fname" id="fname" required>
             </div>
             <div class="container col">
               <label for="lname">Last Name</label>
-              <input type="text" name="lname" id="">
+              <input type="text" name="lname" id="lname" required>
             </div>
           </fieldset>
           <fieldset id="form-mid" class="container">
             <div class="container col">
               <label for="email">Email</label>
-              <input type="email" name="email" id="">
+              <input type="email" name="email" id="email" required>
             </div>
             <div class="container col">
               <label for="tel">Phone Number</label>
-              <input type="tel" name="tel" id="">
+              <input type="tel" name="tel" id="tel" required>
             </div>
           </fieldset>
           <fieldset id="form-bot" class="container">
             <div class="container col">
               <label for="pwd">Password</label>
-              <input type="password" name="pwd" id="">
+              <input type="password" name="pwd" id="pwd" onkeyup="check();" required>
             </div>
             <div class="container col">
               <label for="cpwd">Confirm Password</label>
-              <input type="password" name="cpwd" id="">
+              <input type="password" name="cpwd" id="cpwd" onkeyup="check();" required>
+              <span id="matched"></span>
             </div>
           </fieldset>
         </fieldset>
@@ -68,5 +69,6 @@
       <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

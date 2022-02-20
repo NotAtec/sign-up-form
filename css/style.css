@@ -12,6 +12,24 @@
 
 #left, #right {
   min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#right {
+  padding-top: 15vh;
+  flex-grow: 1;
+  background-color: #f9fafb;
+}
+
+#right div {
+  padding-left: 2.5vw;
+}
+
+#form-div {
+  background-color: white;
+  box-shadow: 0 0 10px var(--shadow-color);
+  padding: 16px 0;
+  margin-bottom: 2rem;
 }
 
 #left {
@@ -120,4 +138,8 @@ input:focus {
   border: 2px solid #2f5fe2;
   box-shadow: 0 0 5px var(--shadow-color);
 
+}
+
+#combined-call {
+  margin-bottom: 3vh;
 }
